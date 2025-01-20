@@ -1,10 +1,9 @@
+// main.go
 package main
 
-import "github.com/01-edu/z01"
+import "piscine"
 
 func main() {
-	for r := 'a'; r <= 'z'; r++ {
-		z01.PrintRune(r)
-	}
-	z01.PrintRune('\n')
+    // 課題「printalphabet」を呼び出す
+    piscine.PrintAlphabet()
 }

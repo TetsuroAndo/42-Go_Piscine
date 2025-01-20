@@ -1,10 +1,8 @@
+// main.go
 package main
 
-import "github.com/01-edu/z01"
+import "piscine"
 
 func main() {
-	for r := 'z'; r >= 'a'; r-- {
-		z01.PrintRune(r)
-	}
-	z01.PrintRune('\n')
+    piscine.PrintReverseAlphabet()
 }
