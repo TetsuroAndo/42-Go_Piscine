@@ -2,6 +2,8 @@ package piscine
 
 import "ft"
 
+var firstPrint = true
+
 func PrintCombN(n int) {
     if n <= 0 || n >= 10 {
         return
@@ -10,8 +12,6 @@ func PrintCombN(n int) {
     firstPrint = true
     recursivePrintCombN(digits[:], 0, '0', n)
 }
-
-var firstPrint = true
 
 func recursivePrintCombN(digits []rune, index int, start rune, n int) {
     if index == n {
